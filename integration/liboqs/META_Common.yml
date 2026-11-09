@@ -1,7 +1,7 @@
 commons:
   - name: qruov_common
     folder_name: .
-    sources: src/api.h src/qruov.h src/qruov_param.h src/qruov_tau.h src/fql.h src/gf.h src/qrop.c src/qrop.h src/qruov_common.c src/qruov_common.h src/prg.c src/prg.h src/prim.c src/prim.h src/linsys.c src/linsys.h src/sign.c src/rng.h src/util.h integration/liboqs/namespace.h integration/liboqs/randombytes.c
+    sources: src/api.h src/qruov.h src/qruov_param.h src/qruov_tau.h src/fql.h src/gf.h src/qrop.c src/qrop.h src/qruov_common.c src/qruov_common.h src/prg.c src/prg.h src/prim.c src/prim.h src/linsys.c src/linsys.h src/sign.c src/rng.h src/util.h integration/liboqs/namespace.h integration/liboqs/randombytes.c integration/liboqs/signature.c
     include_only: true
 
   - name: qruov_ref
@@ -16,5 +16,5 @@ commons:
 
   - name: qruov_avx2
     folder_name: .
-    sources: src/avx2/qruov.c src/avx2/emi_transform.c src/avx2/emi_matrix.c src/avx2/emi_transform_gen.c src/avx2/helpers.c src/avx2/kernel.c src/avx2/x86aesni.c src/avx2/emi_transform.h src/avx2/fastop.h src/avx2/helpers.h src/avx2/kernel.h src/avx2/qruov_simd.h src/avx2/simd.h src/avx2/x86aesni.h
+    sources: src/avx2/qruov.c src/avx2/emi_transform.c src/avx2/emi_matrix.c src/avx2/emi_transform_gen.c src/avx2/helpers.c src/avx2/kernel.c src/avx2/emi_transform.h src/avx2/fastop.h src/avx2/helpers.h src/avx2/kernel.h src/avx2/qruov_simd.h src/avx2/simd.h
     include_only: true
