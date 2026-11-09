@@ -42,7 +42,7 @@ implementations:
 - name: avx2
   version: Round 3
   folder_name: .
-  compile_opts: -DQRUOV_PARAM_1q31L3 -DPRG_IS_AES=0 -DQRUOV_PRIM_OQS -DQRUOV_NAMESPACE_PREFIX=qruov_1q31L3_shake_avx2_ -DPRIM_AES_BACKEND_X86AESNI=1 -mavx2 -mbmi2 -maes $<$<C_COMPILER_ID:MSVC>:/FInamespace.h> $<$<NOT:$<C_COMPILER_ID:MSVC>>:-include> $<$<NOT:$<C_COMPILER_ID:MSVC>>:namespace.h>
+  compile_opts: -DQRUOV_PARAM_1q31L3 -DPRG_IS_AES=0 -DQRUOV_PRIM_OQS -DQRUOV_NAMESPACE_PREFIX=qruov_1q31L3_shake_avx2_ -mavx2 -mbmi2 -maes $<$<C_COMPILER_ID:MSVC>:/FInamespace.h> $<$<NOT:$<C_COMPILER_ID:MSVC>>:-include> $<$<NOT:$<C_COMPILER_ID:MSVC>>:namespace.h>
   signature_keypair: qruov_1q31L3_shake_avx2_crypto_sign_keypair
   signature_signature: qruov_1q31L3_shake_avx2_crypto_sign_signature
   signature_verify: qruov_1q31L3_shake_avx2_crypto_sign_verify

@@ -16,5 +16,5 @@ commons:
 
   - name: qruov_avx2
     folder_name: .
-    sources: src/avx2/qruov.c src/avx2/emi_transform.c src/avx2/emi_matrix.c src/avx2/emi_transform_gen.c src/avx2/helpers.c src/avx2/kernel.c src/avx2/x86aesni.c src/avx2/emi_transform.h src/avx2/fastop.h src/avx2/helpers.h src/avx2/kernel.h src/avx2/qruov_simd.h src/avx2/simd.h src/avx2/x86aesni.h
+    sources: src/avx2/qruov.c src/avx2/emi_transform.c src/avx2/emi_matrix.c src/avx2/emi_transform_gen.c src/avx2/helpers.c src/avx2/kernel.c src/avx2/emi_transform.h src/avx2/fastop.h src/avx2/helpers.h src/avx2/kernel.h src/avx2/qruov_simd.h src/avx2/simd.h
     include_only: true

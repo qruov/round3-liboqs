@@ -49,7 +49,7 @@ typedef struct shake128 {
 } shake128;
 
 typedef struct aes128 {
-#if defined(PRIM_AES_BACKEND_X86AESNI)
+#if defined(PRIM_AES_BACKEND_X86AESNI) && !defined(QRUOV_PRIM_OQS)
     // AES-128 round keys (11 x 16 bytes), 16-byte aligned for AES-NI loads.
     uint8_t round_keys[11 * 16] __attribute__((aligned(16)));
 #elif defined(QRUOV_PRIM_OQS)

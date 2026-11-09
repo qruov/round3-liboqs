@@ -15,7 +15,7 @@
 #define QRUOV_SECURE_FREE(p, n) do { OPENSSL_cleanse((p), (n)); free((p)); } while (0) // IGNORE memory-check
 #endif // QRUOV_PRIM_OQS
 #include "prim.h"
-#if defined(PRIM_AES_BACKEND_X86AESNI)
+#if defined(PRIM_AES_BACKEND_X86AESNI) && !defined(QRUOV_PRIM_OQS)
 #include "x86aesni.h"
 #endif // PRIM_AES_BACKEND_X86AESNI
 
@@ -209,7 +209,7 @@ void shake128_free(shake128 *ctx)
 
 #endif // QRUOV_PRIM_OQS
 
-#if defined(PRIM_AES_BACKEND_X86AESNI)
+#if defined(PRIM_AES_BACKEND_X86AESNI) && !defined(QRUOV_PRIM_OQS)
 void aes128ctr_init(aes128 *ctx, const uint8_t key[16])
 {
     AES128_Key_Expansion(ctx->round_keys, key);
