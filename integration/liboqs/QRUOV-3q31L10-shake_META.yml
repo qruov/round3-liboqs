@@ -24,7 +24,7 @@ implementations:
   signature_keypair: qruov_3q31L10_shake_ref_crypto_sign_keypair
   signature_signature: qruov_3q31L10_shake_ref_crypto_sign_signature
   signature_verify: qruov_3q31L10_shake_ref_crypto_sign_verify
-  sources: integration/liboqs/signature.c
+  sources: ''
   memory_optimized: false
   supported_platforms: []
   common_dep: qruov_common qruov_ref
@@ -35,7 +35,7 @@ implementations:
   signature_keypair: qruov_3q31L10_shake_opt_crypto_sign_keypair
   signature_signature: qruov_3q31L10_shake_opt_crypto_sign_signature
   signature_verify: qruov_3q31L10_shake_opt_crypto_sign_verify
-  sources: integration/liboqs/signature.c
+  sources: ''
   memory_optimized: false
   supported_platforms: []
   common_dep: qruov_common qruov_opt
@@ -46,7 +46,7 @@ implementations:
   signature_keypair: qruov_3q31L10_shake_avx2_crypto_sign_keypair
   signature_signature: qruov_3q31L10_shake_avx2_crypto_sign_signature
   signature_verify: qruov_3q31L10_shake_avx2_crypto_sign_verify
-  sources: integration/liboqs/signature.c
+  sources: ''
   supported_platforms:
   - architecture: x86_64
     operating_systems:

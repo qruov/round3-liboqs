@@ -1,7 +1,7 @@
 commons:
   - name: qruov_common
     folder_name: .
-    sources: src/api.h src/qruov.h src/qruov_param.h src/qruov_tau.h src/fql.h src/gf.h src/qrop.c src/qrop.h src/qruov_common.c src/qruov_common.h src/prg.c src/prg.h src/prim.c src/prim.h src/linsys.c src/linsys.h src/sign.c src/rng.h src/util.h integration/liboqs/namespace.h integration/liboqs/randombytes.c
+    sources: src/api.h src/qruov.h src/qruov_param.h src/qruov_tau.h src/fql.h src/gf.h src/qrop.c src/qrop.h src/qruov_common.c src/qruov_common.h src/prg.c src/prg.h src/prim.c src/prim.h src/linsys.c src/linsys.h src/sign.c src/rng.h src/util.h integration/liboqs/namespace.h integration/liboqs/randombytes.c integration/liboqs/signature.c
     include_only: true
 
   - name: qruov_ref
